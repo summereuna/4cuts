@@ -11,7 +11,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-image: url("./background.avif");
+  background-image: url("./img/background.avif");
   background-size: cover;
 }
 
@@ -38,17 +38,17 @@ body {
 }
 
 #image1 {
-  background-image: url("./2021.jpeg");
+  background-image: url("./img/2021.jpeg");
 }
 #image2 {
-  background-image: url("./2022.jpeg");
+  background-image: url("./img/2022.jpeg");
 }
 #image3 {
-  background-image: url("./2023.jpeg");
+  background-image: url("./img/2023.jpeg");
   background-position: center;
 }
 #image4 {
-  background-image: url("./2024.jpeg");
+  background-image: url("./img/2024.jpeg");
   background-position: center;
   background-size: 100%;
 }
