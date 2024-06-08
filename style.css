@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Cafe24Meongi-W-v1.0";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-W-v1.0.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Cafe24Meongi-W-v1.0";
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-image: url("./background.avif");
+  background-size: cover;
+}
+
+.container {
+  width: 390px;
+  background-color: #000000;
+  height: 100%;
+  /* 부모 높이 전체 사용 */
+  margin: 30px 0;
+}
+
+.photos {
+  margin: 20px 0;
+}
+
+.photos__frame {
+  background-color: white;
+  margin: 15px 20px;
+  height: 200px;
+  background-size: cover;
+  background-size: 130%;
+  cursor: pointer;
+  background-position: center top;
+}
+
+#image1 {
+  background-image: url("./2021.jpeg");
+}
+#image2 {
+  background-image: url("./2022.jpeg");
+}
+#image3 {
+  background-image: url("./2023.jpeg");
+  background-position: center;
+}
+#image4 {
+  background-image: url("./2024.jpeg");
+  background-position: center;
+  background-size: 100%;
+}
+
+.photos__frame__desc {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  /* 초반에 페이지 열릴 때 기본으로 안보이게 하기 위한 설정 */
+}
+.showText {
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+.hideText {
+  opacity: 0;
+}
+
+.photos__frame__desc__text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.photos__frame__desc__text--sm {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  padding: 5px 0 20px 0;
+  color: rgb(228, 1, 43);
+}
+.footer__team {
+  font-size: 25px;
+  margin-bottom: 3px;
+}
+.footer__members {
+  font-size: 40px;
+}
